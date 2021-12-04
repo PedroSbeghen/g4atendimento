@@ -167,7 +167,7 @@ function validaCNS() {
 
 function runLogin() {
   if (validaCPF() && validaCNS()) {
-    window.location.href = "./queue.html";
+    window.location.href = "./solicitation.html";
     return false;
   } else {
     loginError.classList.remove("sr-only");
