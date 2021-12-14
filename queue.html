@@ -76,10 +76,10 @@
 
   <main class="container w-100 d-flex flex-column align-items-center justify-content-center">
     <div class="queue-container d-flex flex-column justify-content-center align-items-center bg-primary">
-      <h1>137</h1>
+      <h1 id="nomeDiv">25</h1>
       <p>Posição na Fila</p>
     </div>
-    <a class="mt-5 btn btn-danger btn-lg" href="./solicitation.html">Cancelar Atendimento</a>
+    <a class="mt-5 btn btn-danger btn-lg" href="./cancel.html">Cancelar Atendimento</a>
     <a href="./faq.html">
       <h3 class="fs-5 mt-5 pt-5 fw-light">Precisa de Ajuda? Clique aqui!</h3>
     </a>
@@ -93,6 +93,12 @@
     <script type="text/javascript" src="./assets/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="./assets/js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="./assets/js/scripts.js"></script>
+    <script>window.onload = function(){
+      var duration = 25; //Conversão para segundos
+      var display = document.querySelector("#nomeDiv");
+    
+      startTimer(duration, display);
+    }</script>
   </section>
 
 </body>
