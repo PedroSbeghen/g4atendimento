@@ -70,7 +70,7 @@
     <div>
       <h2 class="mt-2">Faça Login</h2>
       <div class="login-fields">
-        <form onsubmit="return runLogin();">
+        <form onsubmit="return runLogin();" method="get">
           <div class="input-field">
             <input class="form-control" autocomplete="off" type="text" name="cpf" id="cpf" placeholder="Coloque seu CPF"
               onChange="validaCPF(), $(this).mask('000.000.000-00')" onkeypress="$(this).mask('000.000.000-00')">
